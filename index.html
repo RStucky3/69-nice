@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<style>
+
+.buttonss {
+   align-items: center;
+   background-image: linear-gradient(144deg,pink, purple 50%,red);
+   border: 0;
+   border-radius: 8px;
+   box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+   box-sizing: border-box;
+   color: #FFFFFF;
+   display: flex;
+   font-family: Phantomsans, sans-serif;
+   font-size: 20px;
+   justify-content: center;
+   line-height: 1em;
+   max-width: 100%;
+   min-width: 140px;
+   padding: 19px 24px;
+   text-decoration: none;
+   user-select: none;
+   -webkit-user-select: none;
+   touch-action: manipulation;
+   white-space: nowrap;
+   cursor: pointer;
+}
+
+    .buttonss:active,
+    .buttonss:hover {
+        outline: 0;
+    }
+
+    @media (min-width: 768px) {
+        .buttonss {
+            font-size: 24px;
+            min-width: 196px;
+        }
+    }
+</style>
+<body>
+<marquee><h1 id="me" style="color: red; font-family:'Oswald',Impact,'Arial Black',Arial,Helvetica,sans-serif;">Me + You?</h1></marquee>
+<h1 id="hey" style="color: pink">hey sexy, wanna fuck</h1>
+<img id="image" src=
+        "/foto.png"
+     alt="GFG image" />
+
+<svg onclick="notshow()"; width="100%"; height="500px"; fill="pink">
+    <path d="M384 384H224c-14 0-26-9-30-22l-32-96a32 32 0 1 1 60-20l25 74h112l26-104c4-14 16-24 31-24h64a32 32 0 0 1 0 64h-39l-26 104c-4 14-16 24-31 24m-128 64a32 32 0 1 1-64 0 32 32 0 0 1 64 0m160 0a32 32 0 1 1-64 0 32 32 0 0 1 64 0"></path>
+    <path d="M96 288H32a32 32 0 0 1 0-64h39l26-104c4-14 16-24 31-24h160c14 0 26 9 30 22l32 96a32 32 0 1 1-60 20l-25-74H153l-26 104c-4 14-16 24-31 24M256 32a32 32 0 1 1 64 0 32 32 0 0 1-64 0M96 32a32 32 0 1 1 64 0 32 32 0 0 1-64 0"></path>
+</svg>
+<marquee><h1 id='but' style="color: cadetblue;">Butt only if you want</h1></marquee>
+<marquee><h1 id='butt' style="color: cadetblue;">hehe i said butt</h1></marquee>
+
+
+
+<button type="button" class="buttonss"
+        onclick="show()" id="btnID">
+    Click for nudes 🥵
+</button>
+
+<script>
+    document.getElementById('hey')
+        .style.display = "none";
+    document.getElementById('image')
+        .style.display = "none";
+    function show() {
+        document.querySelector('svg').style.display = "none";
+        document.getElementById('image')
+            .style.display = "block";
+
+        document.getElementById('btnID')
+            .style.display = "none";
+
+        document.getElementById('hey')
+            .style.display = "block";
+
+        document.getElementById('me')
+            .style.display = "none";
+
+        document.getElementById('but')
+            .style.display = "none";
+    }
+</script>
+</body>
+</html>
